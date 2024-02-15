@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+    }
+    
+    .container {
+      display: flex;
+      width: 100%;
+      height: 100vh;
+    }
+    
+    .form-section {
+      flex: 30%;
+      background-color: #333;
+      color: white;
+      padding: 20px;
+      box-sizing: border-box;
+    }
+    
+    .content-section {
+      flex: 70%;
+      padding: 20px;
+      box-sizing: border-box;
+    }
+    
+    h1 {
+      text-align: center;
+    }
+    
+    form {
+      margin-top: 20px;
+    }
+    
+    /* Styles for navigation bar */
+    .navigationbar {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      background: #333;
+      overflow: hidden;
+    }
+    
+    .b {
+      display: block;
+      text-align: center;
+      font-family: Arial;
+      color: white;
+      padding: 10px 20px;
+      text-decoration: none;
+    }
+    
+    .b:hover {
+      background-color: #555;
+    }
+    
+    /* Other styles remain unchanged */
+    .cities {
+      text-align: center;
+      color: blue;
+      font-size: 200%;
+      font-family: 'Lucida Sans';
+    }
+    
+    .sentence1 {
+      font-family: 'Lucidia Sans';
+      color: white;
+      font-size: 180%;
+    }
+    
+    .button1 {
+      background-color: rgb(70, 96, 226);
+      color: white;
+      font-size: 150%;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <!-- Form Section -->
+    <div class="form-section">
+      <header>
+        <h1>Welcome to luxurytravel</h1>
+      </header>
+      <ul class="navigationbar">
+        <li class="b"><a href="#home">Home</a></li>
+        <li class="b"><a href="#about">About</a></li>
+        <li class="b"><a href="#services">Services</a></li>
+        <li class="b"><a href="#contact">Contact</a></li>
+      </ul>
+      <form>
+        <p class="sentence1">THE FOLLOWING IS A FORM FOR DETAILS</p>
+        <label>First name:</label>
+        <input type="text"><br><hr>
+  
+        <label>Last name:</label>
+        <input type="text"><br><hr>
+  
+        <label>Credit card details:</label>
+        <input type="text"><br><hr>
+  
+        <label>Car Details:</label><br>
+        <input type="checkbox">I HAVE A CAR<br>
+        <input type="checkbox">I DON'T HAVE A CAR<br><hr>
+  
+        <label for="people">Number of people</label>
+        <select id="people" name="people">
+          <option>1 person</option>
+          <option>2 person</option>
+          <option>3 person</option>
+          <option>4 person</option>
+          <option>5 person</option>
+          <option>more than 5</option>
+          <option>prefer to not say</option>
+        </select>
+        <br><hr>
+  
+        <button class="button1" onclick="alert('Your form has been submitted')">Submit</button>
+      </form>
+    </div>
+    
+    <!-- Content Section -->
+    <div class="content-section">
+      <header>
+        <h1>Top Places to Take a Flight</h1>
+      </header>
+      <div class="cities">
+        <p>THE FOLLOWING ARE THE TOP PLACES TO TAKE A FLIGHT</p>
+        <ul type="none">
+          <li>Great Britain</li>
+          <img src="https://images.edrawmind.com/article/london-bridge-history/800_531.jpg" width="1000px" height="500px">
+          <li>Japan</li>
+          <img src="https://media.istockphoto.com/id/904453184/photo/mt-fuji-and-tokyo-skyline.jpg?s=612x612&w=0&k=20&c=dCovWtrGOge0jVOAQ6UHfjKndURi5jfGvgM0jejXtbY=" width="1000px" height="500px">
+          <li>France</li>
+          <img src="https://www.travelandleisure.com/thmb/Qa7_o8_XVpIVH5vqq7i73UlTSkU=/750x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/eiffel-tower-paris-france-EIFFEL0217-6ccc3553e98946f18c893018d5b42bde.jpg" width="1000px" height="500px">
+          <li>Saudi Arabia</li>
+          <img src="https://c4.wallpaperflare.com/wallpaper/640/409/86/religion-city-aerial-photography-metropolis-wallpaper-preview.jpg" width="1000px" height="500px">
+        </ul>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
