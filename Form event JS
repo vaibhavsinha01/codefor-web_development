@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <form onsubmit="submitfunction()">
+    <label>Name</label><input type="text" id="fname" onfocus="focusfunction(this)" onblur="blurfunction(this)" oninput="inputfunction(this)" onselect="selectFunciton()" oninvalid="invalidfunciton()" required><br><br>
+    <label>class</label><input type="text" onfocus="focusfunction(this)" onblur="blurfunction(this)"><br><br>
+    <label>country</label>
+    <select onfocus="focusfunction(this)" onblur="blurfunction(this)" onchange="changefunction(this)">
+      <option value="india">india</option>
+      <option value="pakistan">pakistan</option>
+      <option value="bangladesh">bangladesh</option>
+      <option value="srilanka">srilanka</option>
+      <option value="nepal">nepal</option>
+    </select>
+    <br>
+    <br>
+    <input type="submit">
+  </form>
+  <div id="test" style="border:1px solid red;"></div>
+
+ <script>
+  function focusfunction(element){
+    element.style.background="lime";
+  }
+  function blurfunction(element){
+    element.style.background="";
+  }
+  function inputfunction(element){
+    var x=element.value;
+    document.getElementById("test").innerHTML=x;
+  }
+  function changefunction(element){
+    var x=element.value;
+    document.getElementById("test").innerHTML=x;
+  }
+  function selectFunciton(){
+    console.log("you selected the text");
+  }
+  function submitfunction(){
+    var x=document.getElementById("fname").value;
+    alert("hello "+x+" you have submitted the form");
+  }
+  function invalidfunciton(){
+    alert("please fill the first name");
+  }
+ </script> 
+</body>
+</html>
