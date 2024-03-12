@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .NavigationBar{
+        background: black;
+        width:100%;
+        height:50px;
+        border-color: white;
+        display:inline-block;
+        z-index: 1;
+    }
+    a{
+        font-size: 200%;
+        color:white;
+        margin:20px;
+    }
+    .container{
+        display:flex;
+        width:100%;
+        height:100vh;
+    }
+    .form-section{
+        display:flex;
+        width:20%;
+        box-sizing: border-box;
+        background:white;
+        height:100vh;
+        
+    }
+    .content-section{
+        display:flex;
+        width:80%;
+        box-sizing: border-box;
+        background:skyblue;
+        height:100vh;
+    }
+</style>
+<body>
+    <nav class="NavigationBar">
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Services</a>
+        <a href="#">Contacts</a>
+    </nav>
+    <div>
+        <div class="container">
+        <div class="form-section"></div>
+        <div class="content-section"></div>
+        </div>
+        
+    </div>    
+</body>
+</html>
