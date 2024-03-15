@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: sans-serif;
+        }
+
+        .main {
+            width: 100%;
+            height: 150vh;
+            position: relative;
+            overflow: hidden;
+            background: linear-gradient(to right, #9c27b0, #8ecdff);
+        }
+
+        .nav-links {
+            flex: 1;
+            text-align: right;
+        }
+
+        .nav-links ul li {
+            list-style: none;
+            display: inline-block;
+            margin: 10px 20px;
+        }
+
+        .nav-links ul li a {
+            color: white;
+            text-decoration: none;
+        }
+
+        .information {
+            width: 1000px;
+            height: 1000px;
+            position: absolute;
+            top: 50%;
+            left: -10%;
+            transform: translateY(-50%);
+        }
+
+        #circle {
+            width: 1000px;
+            height: 1000px;
+            position: absolute;
+            top: 0;
+            left: 0;
+            border-radius: 50%;
+            background: #ccc;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .feature1 {
+            z-index: 2;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+            color: #000; /* Adjust text color as needed */
+        }
+        .feature1 img{
+            width:30%;
+            height:30%;
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <nav>
+            <div class="nav-links">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Contacts</a></li>
+                    <li><a href="#">Accessories</a></li>
+                    <li><a href="#">Cart</a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <div class="information">
+            <div id="circle">
+                <div class="feature1">
+                    <img src="C:\Users\Vaibhav\Downloads\Images\Camera2.png">
+                    <h1>Camera</h1>
+                    <p>12MP, Wide Angle Lens</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
